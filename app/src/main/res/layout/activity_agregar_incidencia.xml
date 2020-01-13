@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".AgregarIncidencia">
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="227dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="34dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtTituloInci"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/txtTituloInci"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:text="Titulo de la incidencia"
+        android:textColor="#F20F0F0F"
+        android:textSize="14sp"
+        app:fontFamily="@font/coustard"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTituloInci"
+        app:layout_constraintStart_toStartOf="@+id/editTextTituloInci"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewLogo" />
+
+    <EditText
+        android:id="@+id/editTextTituloInci"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:layout_marginBottom="1dp"
+        android:ems="10"
+        android:hint="Ingresa el titulo de la incidencia"
+        android:inputType="textPersonName"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/txtDia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTituloInci" />
+
+    <TextView
+        android:id="@+id/txtDia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:text="Dia de la incidencia"
+        android:textColor="#F20F0F0F"
+        android:textSize="14sp"
+        app:fontFamily="@font/coustard"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPeriodo"
+        app:layout_constraintStart_toStartOf="@+id/editTextTituloInci"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTituloInci" />
+
+    <EditText
+        android:id="@+id/editTextDia"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:ems="10"
+        android:hint="Ingresa el dìa de la incidencia"
+        android:inputType="textPersonName"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/txtPeriodo"
+        app:layout_constraintEnd_toEndOf="@+id/editTextPeriodo"
+        app:layout_constraintStart_toStartOf="@+id/txtDia"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTituloInci" />
+
+    <TextView
+        android:id="@+id/txtPeriodo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Periodo de la incidencia"
+        android:textColor="#F20F0F0F"
+        android:textSize="14sp"
+        app:fontFamily="@font/coustard"
+        app:layout_constraintStart_toStartOf="@+id/editTextPeriodo"
+        app:layout_constraintTop_toTopOf="@+id/editTextPeriodo" />
+
+    <EditText
+        android:id="@+id/editTextPeriodo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:layout_marginBottom="3dp"
+        android:ems="10"
+        android:hint="Ingresa Mañana,Tarde,Noche"
+        android:inputType="textPersonName"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/editTextLugar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDia" />
+
+    <TextView
+        android:id="@+id/txtLugar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="Lugar de la incidencia"
+        android:textColor="#F20F0F0F"
+        android:textSize="14sp"
+        app:fontFamily="@font/coustard"
+        app:layout_constraintStart_toStartOf="@+id/editTextLugar"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPeriodo" />
+
+    <EditText
+        android:id="@+id/editTextLugar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:layout_marginBottom="2dp"
+        android:ems="10"
+        android:hint="Ingresa el lugar de la incidencia"
+        android:inputType="textPersonName"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/txtRiesgo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPeriodo" />
+
+    <TextView
+        android:id="@+id/txtRiesgo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="53dp"
+        android:text="Riesgo de la incidencia"
+        android:textColor="#F20F0F0F"
+        android:textSize="14sp"
+        app:fontFamily="@font/coustard"
+        app:layout_constraintBottom_toTopOf="@+id/editTextDescripcion"
+        app:layout_constraintStart_toStartOf="@+id/editTextLugar"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLugar" />
+
+    <EditText
+        android:id="@+id/editTextRiesgo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:hint="Ingresa Medio,Alto,Bajo"
+        android:inputType="textPersonName"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="@+id/txtRiesgo"
+        app:layout_constraintTop_toTopOf="@+id/txtRiesgo" />
+
+    <TextView
+        android:id="@+id/txtDescripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:text="Descripciòn de la incidencia"
+        android:textColor="#F20F0F0F"
+        android:textSize="14sp"
+        app:fontFamily="@font/coustard"
+        app:layout_constraintStart_toStartOf="@+id/editTextRiesgo"
+        app:layout_constraintTop_toBottomOf="@+id/editTextRiesgo" />
+
+    <EditText
+        android:id="@+id/editTextDescripcion"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Ingresa descripciòn de la incidencia"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/txtFoto"
+        app:layout_constraintEnd_toEndOf="@+id/editTextLugar"
+        app:layout_constraintStart_toStartOf="@+id/txtDescripcion"
+        app:layout_constraintTop_toBottomOf="@+id/txtRiesgo" />
+
+    <TextView
+        android:id="@+id/txtFoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="Foto de la incidencia"
+        android:textColor="#F20F0F0F"
+        android:textSize="14sp"
+        app:fontFamily="@font/coustard"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewMostrarFotoInfo"
+        app:layout_constraintStart_toStartOf="@+id/editTextDescripcion"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDescripcion" />
+
+    <ImageView
+        android:id="@+id/imageViewMostrarFotoInfo"
+        android:layout_width="210dp"
+        android:layout_height="155dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginRight="46dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnTomarFoto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtFoto"
+        app:srcCompat="@drawable/ic_menu_gallery" />
+
+    <Button
+        android:id="@+id/btnTomarFoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:background="#FF9800"
+        android:text="Tomar Foto"
+        android:textColor="#FCF6F6"
+        app:layout_constraintBottom_toTopOf="@+id/btnAgregar"
+        app:layout_constraintStart_toStartOf="@+id/btnAgregar" />
+
+    <Button
+        android:id="@+id/btnAgregar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="56dp"
+        android:layout_marginRight="56dp"
+        android:layout_marginBottom="36dp"
+        android:background="#3F51B5"
+        android:text="Agregar"
+        android:textColor="#FCF6F6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewMostrarFotoInfo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".RegistroUsuarios">
+
+    <ImageView
+        android:id="@+id/imageViewPerfil"
+        android:layout_width="248dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtNombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/txtNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginBottom="44dp"
+        android:text="Nombre:"
+        android:textColor="#F20F0F0F"
+        android:textSize="14sp"
+        app:fontFamily="@font/coustard"
+        app:layout_constraintBottom_toTopOf="@+id/txtApellidos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewPerfil" />
+
+    <EditText
+        android:id="@+id/editTextNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Ingresa tu nombre"
+        android:inputType="textPersonName"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/txtApellidos"
+        app:layout_constraintStart_toStartOf="@+id/txtNombre" />
+
+    <TextView
+        android:id="@+id/txtApellidos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:text="Apellidos:"
+        android:textColor="#F20F0F0F"
+        android:textSize="14sp"
+        app:fontFamily="@font/coustard"
+        app:layout_constraintBottom_toTopOf="@+id/txtMatricula"
+        app:layout_constraintStart_toStartOf="@+id/editTextNombre"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombre" />
+
+    <EditText
+        android:id="@+id/editTextApellido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Ingresa tu apellido"
+        android:inputType="textPersonName"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="@+id/txtApellidos"
+        app:layout_constraintTop_toTopOf="@+id/txtApellidos" />
+
+    <TextView
+        android:id="@+id/txtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="57dp"
+        android:text="Email:"
+        android:textColor="#F20F0F0F"
+        android:textSize="14sp"
+        app:fontFamily="@font/coustard"
+        app:layout_constraintBottom_toTopOf="@+id/txtContrasena"
+        app:layout_constraintStart_toStartOf="@+id/editTextMatricula"
+        app:layout_constraintTop_toBottomOf="@+id/editTextMatricula" />
+
+    <TextView
+        android:id="@+id/txtMatricula"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Matricula:"
+        android:textColor="#F20F0F0F"
+        android:textSize="14sp"
+        app:fontFamily="@font/coustard"
+        app:layout_constraintBottom_toTopOf="@+id/editTextMatricula"
+        app:layout_constraintStart_toStartOf="@+id/editTextApellido"
+        app:layout_constraintTop_toBottomOf="@+id/txtApellidos" />
+
+    <EditText
+        android:id="@+id/editTextMatricula"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="Ingresa tu matricula"
+        android:inputType="textPersonName"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/txtEmail"
+        app:layout_constraintStart_toStartOf="@+id/txtMatricula"
+        app:layout_constraintTop_toBottomOf="@+id/txtMatricula" />
+
+    <TextView
+        android:id="@+id/txtContrasena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="87dp"
+        android:text="Contrasena:"
+        android:textColor="#F20F0F0F"
+        android:textSize="14sp"
+        app:fontFamily="@font/coustard"
+        app:layout_constraintBottom_toTopOf="@+id/btnRegistrofb"
+        app:layout_constraintStart_toStartOf="@+id/editTextEmailEntrar"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmail" />
+
+    <Button
+        android:id="@+id/btnRegistrofb"
+        android:layout_width="160dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="57dp"
+        android:background="#3F51B5"
+        android:text="Registrar"
+        android:textColor="#FCF6F6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editTextContrasenaEntrar"
+        app:layout_constraintTop_toBottomOf="@+id/txtContrasena" />
+
+    <EditText
+        android:id="@+id/editTextEmailEntrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Ingresa tu matricula"
+        android:inputType="textEmailAddress"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="@+id/txtEmail"
+        app:layout_constraintTop_toTopOf="@+id/txtEmail" />
+
+    <EditText
+        android:id="@+id/editTextContrasenaEntrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:hint="Ingresa tu matricula"
+        android:inputType="textPassword"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="@+id/txtContrasena"
+        app:layout_constraintTop_toTopOf="@+id/txtContrasena" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

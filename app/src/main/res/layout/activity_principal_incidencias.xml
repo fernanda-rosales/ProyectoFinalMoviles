@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".PrincipalIncidencias">
+
+    <TextView
+        android:id="@+id/txtLogut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="15dp"
+        android:text="Cerrar sesiòn"
+        android:textColor="#F20F0F0F"
+        android:textSize="14sp"
+        app:fontFamily="@font/coustard"
+        app:layout_constraintStart_toStartOf="@+id/imageViewSalir"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewSalir" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="223dp"
+        android:layout_height="132dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/imageViewAgregar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtAgregar"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewVer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageViewVer"
+        app:srcCompat="@drawable/agregar" />
+
+    <ImageView
+        android:id="@+id/imageViewVer"
+        android:layout_width="0dp"
+        android:layout_height="118dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginRight="55dp"
+        android:layout_marginBottom="11dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtAgregar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewAgregar"
+        app:srcCompat="@drawable/verincidencias" />
+
+    <ImageView
+        android:id="@+id/imageViewInfo"
+        android:layout_width="156dp"
+        android:layout_height="128dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginRight="38dp"
+        android:layout_marginBottom="33dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtInfoApp"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewSalir"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAgregar"
+        app:srcCompat="@drawable/pregunta" />
+
+    <ImageView
+        android:id="@+id/imageViewSalir"
+        android:layout_width="163dp"
+        android:layout_height="134dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewInfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewInfo"
+        app:layout_constraintTop_toTopOf="@+id/imageViewInfo"
+        app:srcCompat="@drawable/cerrar" />
+
+    <TextView
+        android:id="@+id/txtAgregar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:text="Agregar incidencias"
+        android:textColor="#F20F0F0F"
+        android:textSize="14sp"
+        app:fontFamily="@font/coustard"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewAgregar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtVerInci"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:text="Ver incidencias"
+        android:textColor="#F20F0F0F"
+        android:textSize="14sp"
+        app:fontFamily="@font/coustard"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewVer"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewVer" />
+
+    <TextView
+        android:id="@+id/txtInfoApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginBottom="120dp"
+        android:text="Informaciòn App"
+        android:textColor="#F20F0F0F"
+        android:textSize="14sp"
+        app:fontFamily="@font/coustard"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageViewInfo" />
+</androidx.constraintlayout.widget.ConstraintLayout>
