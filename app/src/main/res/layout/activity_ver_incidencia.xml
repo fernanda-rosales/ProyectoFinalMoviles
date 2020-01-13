@@ -1,134 +1,151 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".VerIncidencia">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
 
-    <ImageView
-        android:id="@+id/imageViewLogo"
-        android:layout_width="238dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="27dp"
-        android:layout_marginBottom="24dp"
-        app:layout_constraintBottom_toTopOf="@+id/txtTituloInciInfo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo" />
+        <fragment
+            android:id="@+id/ver_incidencia"
+            android:name="com.example.proyectomoviles.fragment.IncidenciaFragment"
+            android:layout_width="match_parent"
+            android:layout_height="631dp"
+            android:layout_weight="1">
 
-    <TextView
-        android:id="@+id/txtTituloInciInfo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="57dp"
-        android:text="Titulo de la incidencia"
-        android:textColor="#F20F0F0F"
-        android:textSize="14sp"
-        app:fontFamily="@font/coustard"
-        app:layout_constraintBottom_toTopOf="@+id/txtPeriodoInfo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        </fragment>
+    </LinearLayout>
 
-    <TextView
-        android:id="@+id/txtDiaInfo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="17dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:text="Dia de la incidencia"
-        android:textColor="#F20F0F0F"
-        android:textSize="14sp"
-        app:fontFamily="@font/coustard"
-        app:layout_constraintEnd_toEndOf="@+id/txtTituloInciInfo"
-        app:layout_constraintTop_toBottomOf="@+id/txtTituloInciInfo" />
+    <!--
+        <ImageView
+            android:id="@+id/imageViewLogo"
+            android:layout_width="238dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toTopOf="@+id/txtTituloInciInfo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo" />
 
-    <TextView
-        android:id="@+id/txtPeriodoInfo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:text="Periodo de la incidencia"
-        android:textColor="#F20F0F0F"
-        android:textSize="14sp"
-        app:fontFamily="@font/coustard"
-        app:layout_constraintBottom_toTopOf="@+id/txtLugarInfo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        <TextView
+            android:id="@+id/txtTituloInciInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="57dp"
+            android:text="Titulo de la incidencia"
+            android:textColor="#F20F0F0F"
+            android:textSize="14sp"
+            app:fontFamily="@font/coustard"
+            app:layout_constraintBottom_toTopOf="@+id/txtPeriodoInfo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:id="@+id/txtLugarInfo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginBottom="15dp"
-        android:text="Lugar de la incidencia"
-        android:textColor="#F20F0F0F"
-        android:textSize="14sp"
-        app:fontFamily="@font/coustard"
-        app:layout_constraintBottom_toTopOf="@+id/txtRiesgoInfo"
-        app:layout_constraintStart_toStartOf="@+id/txtRiesgoInfo" />
+        <TextView
+            android:id="@+id/txtDiaInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="Dia de la incidencia"
+            android:textColor="#F20F0F0F"
+            android:textSize="14sp"
+            app:fontFamily="@font/coustard"
+            app:layout_constraintEnd_toEndOf="@+id/txtTituloInciInfo"
+            app:layout_constraintTop_toBottomOf="@+id/txtTituloInciInfo" />
 
-    <TextView
-        android:id="@+id/txtRiesgoInfo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="14dp"
-        android:layout_marginRight="14dp"
-        android:layout_marginBottom="23dp"
-        android:text="Riesgo de la incidencia"
-        android:textColor="#F20F0F0F"
-        android:textSize="14sp"
-        app:fontFamily="@font/coustard"
-        app:layout_constraintBottom_toTopOf="@+id/txtDescripcionInfo"
-        app:layout_constraintEnd_toEndOf="@+id/txtDescripcionInfo" />
+        <TextView
+            android:id="@+id/txtPeriodoInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Periodo de la incidencia"
+            android:textColor="#F20F0F0F"
+            android:textSize="14sp"
+            app:fontFamily="@font/coustard"
+            app:layout_constraintBottom_toTopOf="@+id/txtLugarInfo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:id="@+id/txtDescripcionInfo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="328dp"
-        android:text="Descripciòn de la incidencia"
-        android:textColor="#F20F0F0F"
-        android:textSize="14sp"
-        app:fontFamily="@font/coustard"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        <TextView
+            android:id="@+id/txtLugarInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="15dp"
+            android:text="Lugar de la incidencia"
+            android:textColor="#F20F0F0F"
+            android:textSize="14sp"
+            app:fontFamily="@font/coustard"
+            app:layout_constraintBottom_toTopOf="@+id/txtRiesgoInfo"
+            app:layout_constraintStart_toStartOf="@+id/txtRiesgoInfo" />
 
-    <TextView
-        android:id="@+id/txtFotoInfo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="2dp"
-        android:layout_marginLeft="2dp"
-        android:layout_marginBottom="13dp"
-        android:text="Foto de la incidencia"
-        android:textColor="#F20F0F0F"
-        android:textSize="14sp"
-        app:fontFamily="@font/coustard"
-        app:layout_constraintBottom_toTopOf="@+id/imageViewMostrarFotoInfo"
-        app:layout_constraintStart_toStartOf="@+id/imageViewMostrarFotoInfo" />
+        <TextView
+            android:id="@+id/txtRiesgoInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginBottom="23dp"
+            android:text="Riesgo de la incidencia"
+            android:textColor="#F20F0F0F"
+            android:textSize="14sp"
+            app:fontFamily="@font/coustard"
+            app:layout_constraintBottom_toTopOf="@+id/txtDescripcionInfo"
+            app:layout_constraintEnd_toEndOf="@+id/txtDescripcionInfo" />
 
-    <ImageView
-        android:id="@+id/imageViewMostrarFotoInfo"
-        android:layout_width="0dp"
-        android:layout_height="150dp"
-        android:layout_marginStart="3dp"
-        android:layout_marginLeft="3dp"
-        android:layout_marginTop="124dp"
-        android:layout_marginEnd="3dp"
-        android:layout_marginRight="3dp"
-        android:layout_marginBottom="123dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/txtLugarInfo"
-        app:layout_constraintStart_toStartOf="@+id/txtRiesgoInfo"
-        app:layout_constraintTop_toTopOf="@+id/txtRiesgoInfo"
-        app:srcCompat="@drawable/ic_menu_gallery" />
+        <TextView
+            android:id="@+id/txtDescripcionInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="328dp"
+            android:text="Descripciòn de la incidencia"
+            android:textColor="#F20F0F0F"
+            android:textSize="14sp"
+            app:fontFamily="@font/coustard"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/txtFotoInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginBottom="13dp"
+            android:text="Foto de la incidencia"
+            android:textColor="#F20F0F0F"
+            android:textSize="14sp"
+            app:fontFamily="@font/coustard"
+            app:layout_constraintBottom_toTopOf="@+id/imageViewMostrarFotoInfo"
+            app:layout_constraintStart_toStartOf="@+id/imageViewMostrarFotoInfo" />
+
+        <ImageView
+            android:id="@+id/imageViewMostrarFotoInfo"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="124dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginBottom="123dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/txtLugarInfo"
+            app:layout_constraintStart_toStartOf="@+id/txtRiesgoInfo"
+            app:layout_constraintTop_toTopOf="@+id/txtRiesgoInfo"
+            app:srcCompat="@drawable/ic_menu_gallery" />
+    -->
 
     <Button
         android:id="@+id/btnAnterior"
